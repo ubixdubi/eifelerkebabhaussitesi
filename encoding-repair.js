@@ -184,7 +184,7 @@
     node.nodeValue = value;
   });
 
-  document.title = "Eifeler Kebaphaus | D\u00f6ner & Izgara in Monschau";
+  document.title = "Eifeler Kebaphaus | D\u00f6ner & Grill in Monschau";
   var description = document.querySelector('meta[name="description"]');
   if (description) description.content = "Eifeler Kebaphaus in Monschau \u2013 warmer D\u00f6ner, Grill und ein erfahrenes Team erwarten Sie. 25 Parkpl\u00e4tze, bequeme Anreise und herzlicher Service.";
 })();

@@ -495,3 +495,18 @@ repairStaticText();
     }
   });
 })();
+
+/* === Privacy notice banner === */
+(function() {
+  var notice = document.getElementById("privacy-notice");
+  var accept = document.getElementById("privacy-notice-accept");
+  if (!notice || !accept) return;
+  var dismissed = localStorage.getItem("eifeler-privacy-notice-dismissed");
+  if (!dismissed) {
+    notice.hidden = false;
+  }
+  accept.addEventListener("click", function() {
+    localStorage.setItem("eifeler-privacy-notice-dismissed", "1");
+    notice.hidden = true;
+  });
+})();
